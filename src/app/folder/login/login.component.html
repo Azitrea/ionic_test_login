@@ -8,18 +8,14 @@
 </ion-header>
 <div class="login-background">
   <form class="form-background" [formGroup]="loginForm">
-    <div>
-      <div>Login: </div>
-      <div>
-        <ion-input class="input-css" type="text" formControlName="loginName"></ion-input>
-      </div>
-    </div>
-    <div>
-      <div>Password: </div>
-      <div>
-        <ion-input class="input-css" type="password" formControlName="password"></ion-input>
-      </div>
-    </div>
+    <ion-item>
+      <ion-label position="floating">Login Name</ion-label>
+      <ion-input formControlName="loginName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input formControlName="password"></ion-input>
+    </ion-item>
     <ion-button class="button-extra" (click)="login()">Login</ion-button>
   </form>
 </div>
