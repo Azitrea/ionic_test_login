@@ -1,0 +1,7 @@
+{
+  "name": "basic-image-handler",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
