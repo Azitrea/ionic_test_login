@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+<div class="login-background">
+  <form class="form-background" [formGroup]="loginForm">
+    <div>
+      <div>Login: </div>
+      <div>
+        <ion-input class="input-css" type="text" formControlName="loginName"></ion-input>
+      </div>
+    </div>
+    <div>
+      <div>Password: </div>
+      <div>
+        <ion-input class="input-css" type="password" formControlName="password"></ion-input>
+      </div>
+    </div>
+    <ion-button class="button-extra" (click)="login()">Login</ion-button>
+  </form>
+</div>

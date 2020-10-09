@@ -13,6 +13,16 @@ export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
     {
+      title: 'Login',
+      url: '/folder/user/login',
+      icon: 'person'
+    },
+    {
+      title: 'Profile',
+      url: '/folder/user/profile',
+      icon: 'person'
+    },
+    {
       title: 'Inbox',
       url: '/folder/Inbox',
       icon: 'mail'
@@ -43,7 +53,6 @@ export class AppComponent implements OnInit {
       icon: 'warning'
     }
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
   constructor(
     private platform: Platform,
